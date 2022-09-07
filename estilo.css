@@ -1,0 +1,996 @@
+/*general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+}
+
+h1 {
+    color: #11296B;
+}
+
+h2 {
+    color: #5e9183;
+}
+
+h3 {
+    color: #11296b;
+}
+
+p {
+    color: black;
+}
+
+header {
+    margin: 0%;
+    background-color: #99D98C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+    padding-right: 50px;
+    font-weight: 500;
+}
+
+.menu nav{
+    display: flex;
+    align-items: center;
+}
+
+.menu nav a{
+    padding: 5px;
+}
+
+.btnMenu {
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+    color: white !important;
+}
+
+.btnMenu:hover {
+    background: none;
+    cursor: pointer;
+    color: green !important;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown button {
+    border: none;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: white;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown button:hover {
+    background-color: rgba(25, 102, 19, 0.808);
+} 
+
+.dropdown div {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+    z-index: 1;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.dropdown:hover div {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown div a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 13px;
+    color: black;
+    transition: 0.1s;
+    white-space: nowrap;
+}
+
+.dropdown div a:hover {
+    background-color: rgba(25, 102, 19, 0.808);
+    color: white;
+}
+
+/*UBICACION */
+.boton {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #bea6a0;
+    border: none;
+    font-size: 15px;
+    padding: 8px;
+    width: 150px;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px rgb(168, 164, 164);
+
+}
+
+#contenidoUbicacion {
+    background-color: white;
+    background-image: url('./imagenes/ubicacion1.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+.tituloUbicacion {
+    text-align: center;
+}
+
+.mapa {
+    display: flex;
+    justify-content: left;
+    padding: 2rem;
+    margin-left: 20px;
+    background-color: #f1b3a58f;
+    width: 55%;
+    height: 45rem;
+    border-radius: 10px;
+    align-items: center;
+    
+
+}
+
+.ubicacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    height: 25px;
+    background-color: transparent;
+    padding: 5rem;
+    margin: 3rem;
+    border-radius: 10px;
+    background-color: #f1b3a540;
+
+}
+.h3u{
+    color: #7d9367;
+    text-align: left;
+}
+
+.parrafoUbicacion {
+    text-align: center;
+}
+
+
+/*perfil*/
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.first-day {
+    grid-column-start: 3;
+}
+
+.calendar-wrapper {
+
+    width: 50%;
+    height: 50%;
+}
+
+.weekday {
+    background: #eee;
+}
+
+.h1CP {
+    text-align: center;
+}
+
+.ulCP {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.liP{
+    
+    text-decoration: none;
+}
+
+
+
+.perfil {
+    width: 30%;
+    height: 80%;
+    float: left;
+}
+.profesPerf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+.proPrep{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.h4P {
+    text-align: center;
+}
+
+.totalPerf {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.menIzqPerf {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    height: 95%;
+    width: 23%;
+    margin-left: 2%;
+    background-color: #fbfbfb22;
+    border-radius: 20px;
+}
+
+.areaDerPerf {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 73%;
+    margin-right: 2%;
+    background-color: #ffffff3a;
+    border-radius: 20px;
+    padding: 2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.supDerPerf {
+    padding: 2rem;
+    height: 50%;
+    display: flex;
+}
+.profPerf {
+    display: flex;
+    width:60%;
+    height: 50%;
+    font-size: 0.5rem;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.profPPerf {
+    
+    font-size: 0.5rem;
+}
+.psicoPerf {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.inferDerPerf{
+    padding: 2rem;
+    height: 50%;
+    display: flex;
+}
+.centerP{
+    display: flex;
+    align-items: center;
+}
+/*grafico perfil*/
+svg {
+    border: 1px solid #000000;
+    
+  }
+
+  rect {
+    stroke: SteelBlue;
+    stroke-width: 2;
+    fill: LightSteelBlue;
+  }
+
+  rect:hover {
+    fill: SteelBlue;
+  }
+  .grafPerf{
+    height: 50%;
+  }
+
+
+
+/*profesionales*/
+.medio {
+    text-align: center;
+    color: #11296B;
+}
+
+.costado {
+    text-align: right;
+    color: #11296B;
+}
+
+.psicologo img {
+    width: inherit;
+}
+
+#psicologos {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+
+}
+
+.psicologo {
+    text-align: center;
+    width: 22%;
+    margin: 1%;
+
+}
+
+.psicologo div img {
+
+    width: 50%;
+}
+
+.medio2 {
+    text-align: center;
+    text-decoration: underline;
+    color: #34A0A4;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.align-psicologo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.cajaPsicologo {
+    padding: 0.5rem;
+}
+.impar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/*login*/
+
+
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 15px;
+    background-color: #99d98c40;
+}
+
+.imagenLogin img {
+    height: 450px;
+}
+
+.imagenLogin img {
+    height: 510px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 40px;
+    padding: 15px;
+}
+
+.contenedor h3 {
+    font-weight: 600;
+
+}
+
+form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 25px;
+    font-size: small;
+}
+
+.customSelect {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;  
+}
+
+.customSelect select {
+    background-color: #f3f3f4;
+    border: 1px solid  grey;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;   
+    color:  rgb(77, 74, 74);
+    cursor: pointer;
+}
+
+.customSelect select:hover {
+    border: 1px solid #99d98c;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.contenedor h3 {
+    font-weight: 600;
+}
+
+form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    font-size: small;
+}
+
+.psicologoPaciente {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+.psicologoPaciente label {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label input {
+    background-color: #f3f3f4;
+    border: 1px solid grey;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    transition: backgground-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+input:hover {
+    border: 1px solid #99d98c;
+}
+
+input:focus{
+    border: 1px solid #99D98C;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.opciones p a {
+    color: black;
+    text-decoration: none;
+}
+
+.opciones p a:hover {
+    opacity: 0.75;
+    background: none;
+    padding: 0;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox h4 {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.checkbox2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox p {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.olvidasteContraseña {
+    font-size: 12px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit_boton:hover {
+    opacity: 0.75;
+    background-color: white;
+    color: #99D98C;
+    transition: 300ms;
+    border: 1px solid #99d98c;
+}
+
+.submit_boton {
+    background-color:  #99D98C;
+    color: white;
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: center;
+    padding: 14px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+
+.button_boton {
+    color: black !important;
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button_boton:hover {
+    color: black !important;
+    transition: 300ms;
+    opacity: 0.7;
+    padding: 0;
+    margin: 0;
+    background:none
+}
+
+
+/*index */
+.intro{
+    display: flex;
+    padding: 5rem
+
+}
+.h1i {
+    padding: 1rem;
+    color: #11296b;
+}
+
+.h3i {
+    color: #25a83f;
+}
+
+.h1i {
+    position: relative;
+    text-align: center;
+    color: #11296B;
+    font-size: 5rem;
+    font-weight: bold;
+
+
+}
+
+.inindex{
+    display: flex;
+    justify-content: center;
+    height: 80rem;
+    background-image: url(./imagenes/fondo\ ini.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+a:link {
+    color: rgba(0, 255, 234, 0.593);
+
+}
+
+a:hover {
+    text-decoration: none;
+    background: #82ddba68;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+
+.video {
+    text-align: left;
+    padding-bottom: 4rem;
+    
+}
+
+.pie {
+    position: relative;
+    text-align: center;
+    color: #11296B;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.flex-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 90px;
+    padding-top: 20rem;
+    margin: 3rem;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: transparent;
+
+}
+
+
+
+.pagina {
+    text-align: center;
+}
+
+/*CONTRASEÑA*/
+.contraseñaContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #99d98c40;
+}
+
+.contraseña {
+    height: 510px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recuperarContraseña {
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.recuperarContraseña h4 {
+    color: #11296b;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.recuperarContraseña span {
+    font-size: 17px;
+}
+
+.inputEmail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px;
+    gap: 11px;
+}
+
+.inputEmail h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.inputEmail input {
+    width: 350px;
+    display: flex;
+    border: 1px solid  grey;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: backgground-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+.inputEmail input:hover {
+    border: 1px solid #99d98c;
+}
+
+.inputEmail input:focus{
+    border: 1px solid #99D98C;
+}
+
+.inputEmail button {
+    width: 350px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #99D98C ;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.inputEmail button:hover {
+    opacity: 0.75;
+}
+
+.back a {
+    margin: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(88, 87, 87);
+    background: none;
+}
+
+.back a:hover {
+    transition: 0.2s;
+    color:#99C7EA ;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #4a5063;
+    padding: 30px;
+}
+
+.picture_footer {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo_footer {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.container_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerMenu ul {
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.footerMenu ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footerMenu ul li a:hover {
+    opacity: 0.7;
+    padding: 0;
+    background: none;
+}
+
+.redes_sociales_container {
+    color: white;
+}
+
+.redesSociales img {
+    filter: invert(1);
+}
+
+.redesSociales a:hover {
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mail_container {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.newsletter {
+    width: 40%;
+    color: white;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter span {
+    width: 244px;
+    margin-bottom: 3px
+}
+
+.mail {
+    display: flex;
+}
+
+.mail input {
+   border: none;
+}
+
+.mail button {
+    font-size: 14px;
+    background-color: #5e9183;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+.mail button img {
+    filter: invert(1);
+    margin-top: 3px;
+}
+
+.copiFooter{
+    font-size: 60%;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    .btnMenu {
+            font-size: 12px;
+        }
+
+    .menu {
+            top: 15px;
+        }
+
+    .logo img {
+            width: 150px;
+            height: 40px;
+        }
+    
+
+        * {
+        margin: 5px;
+    }
+    
+    .container_footer{
+        width:auto;
+    }
+    .mapa{
+        width: auto;
+    }
+    .picture_footer{
+        width: auto;
+    }
+    .logo_footer{
+        width: auto;
+    }
+    .footerMenu{
+        width: auto;
+    }
+    .redes_sociales_container{
+        width: auto;
+    }
+    .mail_container{
+        width: auto;
+    }
+    .contenedor{
+        width: auto;
+    }
+    .inicio2{
+        width: 300px;
+    }
+}
+
+
+@media screen  and (max-width:576px) {
+    .btnMenu {
+            font-size: 7px;
+        }
+
+    .menu {
+            top: 8px;
+        }
+
+    .logo img {
+            width: 80px;
+            height: 20px;
+        }
+    
+
+        * {
+        margin: 2px;
+    }
+    #psicologos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mapa{
+        width: auto;
+    }
+    .inicio2{
+        width: 150px;
+    }
+    .container_footer{
+        font-size: 7px;
+        width:auto;
+    }
+    .contenedor{
+    width: auto;
+   }
+    .picture_footer{
+        width: auto;
+    }
+    .logo_footer{
+        width: auto;
+    }
+    .footerMenu{
+        width: auto;
+    }
+    .redes_sociales_container{
+        width: auto;
+    }
+    .ubicacion{
+        width: 50%;
+    }
+    .mail button{
+
+        width: 5px;
+        height: 10px;
+
+    }
+    .mail_container{
+        width: auto;
+    }
+}
