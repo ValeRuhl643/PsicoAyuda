@@ -384,7 +384,7 @@ svg {
     padding: 1rem;
 }
 
-/*login*/
+/*login y registrarse*/
 
 
 #main {
@@ -567,18 +567,22 @@ input:focus{
     font-size: 14pt;
     text-align: center;
     padding: 14px;
-    border: none;
+    border: 1px solid #99D98C;;
     border-radius: 40px;
     cursor: pointer;
     margin: 10px;
     padding: 10px;
 }
 
+.registro-link {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+
 .button_boton {
     color: black !important;
     text-align: center;
-    font-size: 13px;
-    text-decoration: none;
     border: none;
     cursor: pointer;
 }
@@ -633,8 +637,7 @@ a:link {
 
 }
 
-a:hover {
-    text-decoration: none;
+ a:hover {
     background: #82ddba68;
     border-radius: 10px;
     padding: 0.5rem;
@@ -671,8 +674,6 @@ a:hover {
 
 }
 
-
-
 .pagina {
     text-align: center;
 }
@@ -684,6 +685,10 @@ a:hover {
     align-items: center;
     justify-content: space-evenly;
     background-color: #99d98c40;
+}
+
+.contraseñaContainer img {
+    width:  360px; 
 }
 
 .contraseña {
@@ -768,8 +773,9 @@ a:hover {
 }
 
 .back a:hover {
-    transition: 0.2s;
-    color:#99C7EA ;
+    opacity: 0.75;
+    background: none;
+    padding: 0;
 }
 
 
@@ -777,26 +783,17 @@ a:hover {
 footer {
     background-color: #4a5063;
     padding: 30px;
-}
-
-.picture_footer {
-    height: 50px;
-    width: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.logo_footer {
-    display: flex;
-    flex-direction: row;
-    cursor: pointer;
-}
-
-.container_footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.picture_footer {
+    height: 2.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .footerMenu ul {
@@ -835,14 +832,12 @@ footer {
 
 .mail_container {
     display: flex;
-    width: 50%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
 .newsletter {
-    width: 40%;
     color: white;
     font-size: 11px;
     display: flex;
@@ -850,7 +845,7 @@ footer {
 }
 
 .newsletter span {
-    width: 244px;
+    width: 185px;
     margin-bottom: 3px
 }
 
@@ -874,6 +869,7 @@ footer {
 .mail button img {
     filter: invert(1);
     margin-top: 3px;
+    cursor: pointer;
 }
 
 .copiFooter{
@@ -883,8 +879,119 @@ footer {
     margin-top: 20px;
 }
 
+@media (max-width: 785px) {
+    header {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    main {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .imagenLogin img {
+        width: 80%;
+        margin: 2em;
+    }
+    .contraseñaContainer img {
+        width: 80%;
+        margin: 2em;
+    }
+    footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 17px;
+    }
+    .picture_footer img {
+        height: 3em;
+    }
+    .footerMenu {
+        display: flex;
+        justify-content: center;
+    }
+    .redes_sociales_container {
+        display: flex;
+        justify-content: center;
+    }
+}
+ 
 
-@media screen and (min-width:576px) and (max-width:768px) {
+@media (max-width: 400px) {
+    header {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .menu nav {
+        justify-content: center;
+        flex-direction: column;
+    }
+    main {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .imagenLogin img {
+        width: 80%;
+    }
+    .contenedor form {
+        width: 12rem;
+    }
+    .contraseñaContainer img {
+        width: 80%;
+        margin: 2em;
+    }
+    .recuperarContraseña {
+        width: 12rem;
+    }
+    .recuperarContraseña h4 {
+        font-size: 17px;
+    }
+    .recuperarContraseña span{
+      font-size: 13px;
+    }
+    .inputEmail {
+        width: 12rem;
+    }
+    .inputEmail input { 
+        width: 12rem;
+        font-size: 13px;
+    }
+    .inputEmail button {
+        width: 12rem;
+        font-size: 13px;
+    }
+    .back {
+        font-size: 13px;
+    }
+    footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 17px;
+    }
+    .picture_footer img {
+        height: 3em;
+    }
+    .footerMenu {
+        display: flex;
+        justify-content: center;
+    }
+    .redes_sociales_container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+/* @media screen and (max-width:576px) {
+    main {
+        flex-wrap: wrap;
+    }
+    .imagenLogin img {
+        width: 100%;
+    }
+} 
+
+ @media screen and (min-width:576px) and (max-width:768px) {
     .btnMenu {
             font-size: 12px;
         }
@@ -993,4 +1100,4 @@ footer {
     .mail_container{
         width: auto;
     }
-}
+}  */
